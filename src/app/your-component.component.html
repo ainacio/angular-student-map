@@ -1,0 +1,14 @@
+<!-- src/app/your-component.component.html -->
+<div class="container mt-4">
+  <div class="row">
+    <div *ngFor="let student of studentMap.values()" class="col-md-4 mb-4">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">{{ student.name }}</h5>
+          <p class="card-text">ID: {{ student.id }}</p>
+          <!-- Add more properties as needed -->
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
